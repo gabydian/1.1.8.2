@@ -8,8 +8,8 @@ export function App1() {
                     .filter(personagem => personagem.nome.includes('Redfield'))
                     .map(personagem => (
                         <li key={personagem.nome}>
-                            <img src={personagem.url} alt={personagem.nome} height={'200'} />
                             <h3>{personagem.nome}</h3>
+                            <img src={personagem.url} alt={personagem.nome} />
                         </li>
                     ))}
             </ul>
